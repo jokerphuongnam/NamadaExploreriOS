@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80D150F2B6F99F000C3D80B /* ExplorerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */; };
+		A80D15112B6F9A2500C3D80B /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15102B6F9A2500C3D80B /* DI.swift */; };
+		A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */; };
+		A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */; };
+		A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15172B6F9D8E00C3D80B /* Namadexer.swift */; };
+		A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D151A2B6F9EE000C3D80B /* Request.swift */; };
+		A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */; };
+		A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15202B6FA08300C3D80B /* ErrorModel.swift */; };
+		A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15222B6FA16700C3D80B /* NetworkError.swift */; };
+		A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */; };
+		A8C97B862B6F89640076B4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B852B6F89640076B4EA /* Assets.xcassets */; };
+		A8C97B892B6F89640076B4EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */; };
+		A8C97B952B6F89DF0076B4EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B942B6F89DF0076B4EA /* MainView.swift */; };
+		A8C97B9D2B6F8E170076B4EA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B9C2B6F8E170076B4EA /* HomeView.swift */; };
+		A8C97B9F2B6F8E2F0076B4EA /* ValidatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B9E2B6F8E2F0076B4EA /* ValidatorsView.swift */; };
+		A8C97BA12B6F8E3B0076B4EA /* BlocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */; };
+		A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA22B6F8E470076B4EA /* TransactionsView.swift */; };
+		A8C97BA52B6F8E5B0076B4EA /* GovernanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA42B6F8E5B0076B4EA /* GovernanceView.swift */; };
+		A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA62B6F8E650076B4EA /* ParametersView.swift */; };
+		A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA92B6F8F130076B4EA /* DocsView.swift */; };
+		A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BAB2B6F92F40076B4EA /* MainState.swift */; };
+		F7D4FAE833B30951219D43C4 /* Pods_NamadaExporer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.release.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.release.xcconfig"; sourceTree = "<group>"; };
+		91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamadaExporer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.debug.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.debug.xcconfig"; sourceTree = "<group>"; };
+		A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerNetwork.swift; sourceTree = "<group>"; };
+		A80D15102B6F9A2500C3D80B /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A80D15172B6F9D8E00C3D80B /* Namadexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namadexer.swift; sourceTree = "<group>"; };
+		A80D151A2B6F9EE000C3D80B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetwork.swift; sourceTree = "<group>"; };
+		A80D15202B6FA08300C3D80B /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		A80D15222B6FA16700C3D80B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamadaExporer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaExporerApp.swift; sourceTree = "<group>"; };
+		A8C97B852B6F89640076B4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8C97B942B6F89DF0076B4EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A8C97B9C2B6F8E170076B4EA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A8C97B9E2B6F8E2F0076B4EA /* ValidatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorsView.swift; sourceTree = "<group>"; };
+		A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksView.swift; sourceTree = "<group>"; };
+		A8C97BA22B6F8E470076B4EA /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		A8C97BA42B6F8E5B0076B4EA /* GovernanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernanceView.swift; sourceTree = "<group>"; };
+		A8C97BA62B6F8E650076B4EA /* ParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersView.swift; sourceTree = "<group>"; };
+		A8C97BA92B6F8F130076B4EA /* DocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsView.swift; sourceTree = "<group>"; };
+		A8C97BAB2B6F92F40076B4EA /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8C97B7B2B6F89620076B4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4FAE833B30951219D43C4 /* Pods_NamadaExporer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C04B7522A6B5DB9F3C238E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */,
+				8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		588799321D543FCBFC2D132C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80D15142B6F9B8C00C3D80B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */,
+				A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A80D15192B6F9E4F00C3D80B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A80D151A2B6F9EE000C3D80B /* Request.swift */,
+				A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A80D151E2B6FA06F00C3D80B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A80D15192B6F9E4F00C3D80B /* Base */,
+				A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */,
+				A80D15172B6F9D8E00C3D80B /* Namadexer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A80D151F2B6FA07600C3D80B /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				A80D15202B6FA08300C3D80B /* ErrorModel.swift */,
+				A80D15222B6FA16700C3D80B /* NetworkError.swift */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		A8C97B752B6F89620076B4EA = {
+			isa = PBXGroup;
+			children = (
+				A8C97B802B6F89620076B4EA /* NamadaExporer */,
+				A8C97B7F2B6F89620076B4EA /* Products */,
+				1C04B7522A6B5DB9F3C238E2 /* Pods */,
+				588799321D543FCBFC2D132C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8C97B7F2B6F89620076B4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8C97B802B6F89620076B4EA /* NamadaExporer */ = {
+			isa = PBXGroup;
+			children = (
+				A80D15142B6F9B8C00C3D80B /* Application */,
+				A8C97B912B6F89B10076B4EA /* DI */,
+				A8C97B902B6F89A90076B4EA /* Repositories */,
+				A8C97B8F2B6F89A40076B4EA /* Data */,
+				A8C97B922B6F89B80076B4EA /* UIs */,
+				A8C97B852B6F89640076B4EA /* Assets.xcassets */,
+				A8C97B872B6F89640076B4EA /* Preview Content */,
+			);
+			path = NamadaExporer;
+			sourceTree = "<group>";
+		};
+		A8C97B872B6F89640076B4EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8C97B8F2B6F89A40076B4EA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A80D151F2B6FA07600C3D80B /* Domains */,
+				A80D151E2B6FA06F00C3D80B /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8C97B902B6F89A90076B4EA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A8C97B912B6F89B10076B4EA /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A80D15102B6F9A2500C3D80B /* DI.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		A8C97B922B6F89B80076B4EA /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B962B6F8A100076B4EA /* Home */,
+				A8C97B972B6F8A190076B4EA /* Validators */,
+				A8C97B982B6F8A220076B4EA /* Blocks */,
+				A8C97B992B6F8A280076B4EA /* Transactions */,
+				A8C97B9A2B6F8A2E0076B4EA /* Governance */,
+				A8C97B9B2B6F8A4B0076B4EA /* Parameters */,
+				A8C97BA82B6F8EE50076B4EA /* Docs */,
+				A8C97B932B6F89CC0076B4EA /* Main */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		A8C97B932B6F89CC0076B4EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B942B6F89DF0076B4EA /* MainView.swift */,
+				A8C97BAB2B6F92F40076B4EA /* MainState.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A8C97B962B6F8A100076B4EA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B9C2B6F8E170076B4EA /* HomeView.swift */,
+				A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A8C97B972B6F8A190076B4EA /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97B9E2B6F8E2F0076B4EA /* ValidatorsView.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		A8C97B982B6F8A220076B4EA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		A8C97B992B6F8A280076B4EA /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BA22B6F8E470076B4EA /* TransactionsView.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		A8C97B9A2B6F8A2E0076B4EA /* Governance */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BA42B6F8E5B0076B4EA /* GovernanceView.swift */,
+			);
+			path = Governance;
+			sourceTree = "<group>";
+		};
+		A8C97B9B2B6F8A4B0076B4EA /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BA62B6F8E650076B4EA /* ParametersView.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		A8C97BA82B6F8EE50076B4EA /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BA92B6F8F130076B4EA /* DocsView.swift */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8C97B7D2B6F89620076B4EA /* NamadaExporer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C97B8C2B6F89640076B4EA /* Build configuration list for PBXNativeTarget "NamadaExporer" */;
+			buildPhases = (
+				32B136237E1E2578FADAA9AF /* [CP] Check Pods Manifest.lock */,
+				A8C97B7A2B6F89620076B4EA /* Sources */,
+				A8C97B7B2B6F89620076B4EA /* Frameworks */,
+				A8C97B7C2B6F89620076B4EA /* Resources */,
+				42B11A7D3ED1CA4DF91529CE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NamadaExporer;
+			productName = NamadaExporer;
+			productReference = A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8C97B762B6F89620076B4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A8C97B7D2B6F89620076B4EA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A8C97B792B6F89620076B4EA /* Build configuration list for PBXProject "NamadaExporer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8C97B752B6F89620076B4EA;
+			productRefGroup = A8C97B7F2B6F89620076B4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8C97B7D2B6F89620076B4EA /* NamadaExporer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8C97B7C2B6F89620076B4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C97B892B6F89640076B4EA /* Preview Assets.xcassets in Resources */,
+				A8C97B862B6F89640076B4EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32B136237E1E2578FADAA9AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NamadaExporer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42B11A7D3ED1CA4DF91529CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8C97B7A2B6F89620076B4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C97BA52B6F8E5B0076B4EA /* GovernanceView.swift in Sources */,
+				A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */,
+				A8C97B9D2B6F8E170076B4EA /* HomeView.swift in Sources */,
+				A8C97B952B6F89DF0076B4EA /* MainView.swift in Sources */,
+				A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */,
+				A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */,
+				A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */,
+				A8C97BA12B6F8E3B0076B4EA /* BlocksView.swift in Sources */,
+				A80D150F2B6F99F000C3D80B /* ExplorerNetwork.swift in Sources */,
+				A8C97B9F2B6F8E2F0076B4EA /* ValidatorsView.swift in Sources */,
+				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
+				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
+				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
+				A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */,
+				A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */,
+				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,
+				A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */,
+				A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */,
+				A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A8C97B8A2B6F89640076B4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8C97B8B2B6F89640076B4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8C97B8D2B6F89640076B4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NamadaExporer/Preview Content\"";
+				DEVELOPMENT_TEAM = YZK42MUV9Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pnam.NamadaExporer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8C97B8E2B6F89640076B4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NamadaExporer/Preview Content\"";
+				DEVELOPMENT_TEAM = YZK42MUV9Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pnam.NamadaExporer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8C97B792B6F89620076B4EA /* Build configuration list for PBXProject "NamadaExporer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C97B8A2B6F89640076B4EA /* Debug */,
+				A8C97B8B2B6F89640076B4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C97B8C2B6F89640076B4EA /* Build configuration list for PBXNativeTarget "NamadaExporer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C97B8D2B6F89640076B4EA /* Debug */,
+				A8C97B8E2B6F89640076B4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8C97B762B6F89620076B4EA /* Project object */;
+}
