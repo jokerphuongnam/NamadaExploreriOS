@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 final class AppDelegate: NSObject, UIApplicationDelegate {
-    private lazy var container = diRegister()
-    var shared: AppDelegate {
+    private static var container = diRegister()
+    static var shared: AppDelegate {
         UIApplication.shared.delegate as! AppDelegate
     }
     
-    func resolve<T>() -> T {
+    static func resolve<T>() -> T {
         container.resolve(T.self)!
     }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80D150F2B6F99F000C3D80B /* ExplorerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */; };
+		A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */; };
 		A80D15112B6F9A2500C3D80B /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15102B6F9A2500C3D80B /* DI.swift */; };
 		A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */; };
 		A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */; };
@@ -28,6 +28,15 @@
 		A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA62B6F8E650076B4EA /* ParametersView.swift */; };
 		A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BA92B6F8F130076B4EA /* DocsView.swift */; };
 		A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97BAB2B6F92F40076B4EA /* MainState.swift */; };
+		A8FC9ABC2B6FE71200B36FFC /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9ABB2B6FE71200B36FFC /* HomeDetailView.swift */; };
+		A8FC9ABE2B6FE72F00B36FFC /* HomeValidatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9ABD2B6FE72F00B36FFC /* HomeValidatorsView.swift */; };
+		A8FC9AC02B6FE74100B36FFC /* HomeBlocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9ABF2B6FE74100B36FFC /* HomeBlocksView.swift */; };
+		A8FC9AC22B6FEA6F00B36FFC /* SupabaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9AC12B6FEA6F00B36FFC /* SupabaseRequest.swift */; };
+		A8FC9AC62B6FECFA00B36FFC /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9AC52B6FECFA00B36FFC /* Validators.swift */; };
+		A8FC9AC82B6FF04300B36FFC /* SupabaseOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */; };
+		A8FC9ACA2B6FF3A200B36FFC /* SupabaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9AC92B6FF3A200B36FFC /* SupabaseInterceptor.swift */; };
+		A8FC9ACF2B6FF6D800B36FFC /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9ACE2B6FF6D800B36FFC /* DataState.swift */; };
+		A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC9AD02B6FFCF400B36FFC /* StringProtocol+Extension.swift */; };
 		F7D4FAE833B30951219D43C4 /* Pods_NamadaExporer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +44,7 @@
 		8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.release.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.release.xcconfig"; sourceTree = "<group>"; };
 		91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamadaExporer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.debug.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.debug.xcconfig"; sourceTree = "<group>"; };
-		A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerNetwork.swift; sourceTree = "<group>"; };
+		A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseNetwork.swift; sourceTree = "<group>"; };
 		A80D15102B6F9A2500C3D80B /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +66,15 @@
 		A8C97BA62B6F8E650076B4EA /* ParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersView.swift; sourceTree = "<group>"; };
 		A8C97BA92B6F8F130076B4EA /* DocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsView.swift; sourceTree = "<group>"; };
 		A8C97BAB2B6F92F40076B4EA /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		A8FC9ABB2B6FE71200B36FFC /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		A8FC9ABD2B6FE72F00B36FFC /* HomeValidatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeValidatorsView.swift; sourceTree = "<group>"; };
+		A8FC9ABF2B6FE74100B36FFC /* HomeBlocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBlocksView.swift; sourceTree = "<group>"; };
+		A8FC9AC12B6FEA6F00B36FFC /* SupabaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseRequest.swift; sourceTree = "<group>"; };
+		A8FC9AC52B6FECFA00B36FFC /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseOrder.swift; sourceTree = "<group>"; };
+		A8FC9AC92B6FF3A200B36FFC /* SupabaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseInterceptor.swift; sourceTree = "<group>"; };
+		A8FC9ACE2B6FF6D800B36FFC /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		A8FC9AD02B6FFCF400B36FFC /* StringProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +127,8 @@
 		A80D151E2B6FA06F00C3D80B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC9AC32B6FECB400B36FFC /* Supabase */,
 				A80D15192B6F9E4F00C3D80B /* Base */,
-				A80D150E2B6F99F000C3D80B /* ExplorerNetwork.swift */,
 				A80D15172B6F9D8E00C3D80B /* Namadexer.swift */,
 			);
 			path = Network;
@@ -121,6 +139,7 @@
 			children = (
 				A80D15202B6FA08300C3D80B /* ErrorModel.swift */,
 				A80D15222B6FA16700C3D80B /* NetworkError.swift */,
+				A8FC9ACE2B6FF6D800B36FFC /* DataState.swift */,
 			);
 			path = Domains;
 			sourceTree = "<group>";
@@ -146,6 +165,7 @@
 		A8C97B802B6F89620076B4EA /* NamadaExporer */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC9ACB2B6FF4FE00B36FFC /* Utils */,
 				A80D15142B6F9B8C00C3D80B /* Application */,
 				A8C97B912B6F89B10076B4EA /* DI */,
 				A8C97B902B6F89A90076B4EA /* Repositories */,
@@ -216,6 +236,7 @@
 		A8C97B962B6F8A100076B4EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC9ABA2B6FE69B00B36FFC /* Children */,
 				A8C97B9C2B6F8E170076B4EA /* HomeView.swift */,
 				A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */,
 			);
@@ -268,6 +289,44 @@
 				A8C97BA92B6F8F130076B4EA /* DocsView.swift */,
 			);
 			path = Docs;
+			sourceTree = "<group>";
+		};
+		A8FC9ABA2B6FE69B00B36FFC /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9ABD2B6FE72F00B36FFC /* HomeValidatorsView.swift */,
+				A8FC9ABF2B6FE74100B36FFC /* HomeBlocksView.swift */,
+				A8FC9ABB2B6FE71200B36FFC /* HomeDetailView.swift */,
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
+		A8FC9AC32B6FECB400B36FFC /* Supabase */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9AC42B6FECEF00B36FFC /* Requests */,
+				A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */,
+				A8FC9AC12B6FEA6F00B36FFC /* SupabaseRequest.swift */,
+				A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */,
+				A8FC9AC92B6FF3A200B36FFC /* SupabaseInterceptor.swift */,
+			);
+			path = Supabase;
+			sourceTree = "<group>";
+		};
+		A8FC9AC42B6FECEF00B36FFC /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9AC52B6FECFA00B36FFC /* Validators.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A8FC9ACB2B6FF4FE00B36FFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9AD02B6FFCF400B36FFC /* StringProtocol+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,20 +445,29 @@
 			files = (
 				A8C97BA52B6F8E5B0076B4EA /* GovernanceView.swift in Sources */,
 				A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */,
+				A8FC9AC82B6FF04300B36FFC /* SupabaseOrder.swift in Sources */,
+				A8FC9ACF2B6FF6D800B36FFC /* DataState.swift in Sources */,
+				A8FC9ABE2B6FE72F00B36FFC /* HomeValidatorsView.swift in Sources */,
 				A8C97B9D2B6F8E170076B4EA /* HomeView.swift in Sources */,
+				A8FC9AC22B6FEA6F00B36FFC /* SupabaseRequest.swift in Sources */,
 				A8C97B952B6F89DF0076B4EA /* MainView.swift in Sources */,
 				A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */,
 				A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */,
 				A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */,
 				A8C97BA12B6F8E3B0076B4EA /* BlocksView.swift in Sources */,
-				A80D150F2B6F99F000C3D80B /* ExplorerNetwork.swift in Sources */,
+				A8FC9ACA2B6FF3A200B36FFC /* SupabaseInterceptor.swift in Sources */,
+				A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */,
 				A8C97B9F2B6F8E2F0076B4EA /* ValidatorsView.swift in Sources */,
+				A8FC9ABC2B6FE71200B36FFC /* HomeDetailView.swift in Sources */,
 				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
+				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
 				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
+				A8FC9AC02B6FE74100B36FFC /* HomeBlocksView.swift in Sources */,
 				A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */,
 				A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */,
 				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,
+				A8FC9AC62B6FECFA00B36FFC /* Validators.swift in Sources */,
 				A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */,
 				A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */,
 				A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */,

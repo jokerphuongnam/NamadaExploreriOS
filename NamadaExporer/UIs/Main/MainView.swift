@@ -11,6 +11,14 @@ struct MainView: View {
     @State private var currentState: MainState = .home
     @State private var isShowingMenu = false
     
+    init() {
+        UINavigationBar.appearance().scrollEdgeAppearance = {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = UIColor.white
+            return appearance
+        }()
+    }
+    
     var body: some View {
         ZStack {
             content
@@ -37,6 +45,7 @@ struct MainView: View {
             }
             .frame(minWidth: .zero, maxWidth: .infinity, minHeight: .zero, maxHeight: .infinity)
         }
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(currentState.title)
         .toolbar {
             ToolbarItemGroup(placement: .navigation) {
@@ -62,15 +71,11 @@ extension MainView {
     }
     
     private var content: some View {
-        TabView(selection: $currentState) {
+        ZStack {
             ForEach(MainState.allCases, id: \.self) { state in
                 tabScreen(state)
-                    .tabItem {
-                        Text(state.title)
-                    }
+                    .opacity(state == currentState ? 1 : 0)
             }
-        }.onAppear {
-            UITabBar.appearance().isHidden = true
         }
     }
     
