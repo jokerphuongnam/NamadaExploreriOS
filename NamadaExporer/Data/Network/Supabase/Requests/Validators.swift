@@ -14,9 +14,9 @@ final class ValidatorsRequest: SupabaseRequest {
     var path: String = "validators"
     var parameters: Parameters
     
-    init(select: String? = nil, order: SupabaseOrder.SortOrder, limit: Int) {
+    init(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) {
         parameters = [
-            "select": select ?? "*",
+            "select": selects.createQueryString(),
             "order": SupabaseOrder(field: .votingPower, order: order).text,
             "limit": limit
         ]

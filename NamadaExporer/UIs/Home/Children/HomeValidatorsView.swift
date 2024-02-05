@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeValidatorsView: View {
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
     private var validatorsState: DataState<Validators>
     
     init(validatorsState: DataState<Validators>) {
@@ -24,6 +25,7 @@ struct HomeValidatorsView: View {
                 validatorsStateView
             }
             .padding(.top, 32)
+            .padding(.bottom, 52 + 8 + safeAreaInsets.bottom)
         }
         .background(Color.white)
     }

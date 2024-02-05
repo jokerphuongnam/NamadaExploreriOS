@@ -9,7 +9,8 @@ import Foundation
 import Alamofire
 
 protocol SupabaseNetwork {
-    func fecthValidators(select: String?, order: SupabaseOrder.SortOrder, limit: Int) async throws -> ValidatorsRequest.Response
+    func fecthValidators(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) async throws -> ValidatorsRequest.Response
+    func fetchBlocks(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) async throws -> BlocksRequest.Response
 }
 
 final class SupabaseNetworkImpl: SupabaseNetwork, AsyncNetwork {
@@ -21,8 +22,12 @@ final class SupabaseNetworkImpl: SupabaseNetwork, AsyncNetwork {
         self.decoder = decoder
     }
     
-    func fecthValidators(select: String?, order: SupabaseOrder.SortOrder, limit: Int) async throws -> ValidatorsRequest.Response {
-        try await sendAsync(request: ValidatorsRequest(select: select, order: order, limit: limit))
+    func fecthValidators(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) async throws -> ValidatorsRequest.Response {
+        try await sendAsync(request: ValidatorsRequest(selects: selects, order: order, limit: limit))
+    }
+    
+    func fetchBlocks(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) async throws -> BlocksRequest.Response {
+        try await sendAsync(request: BlocksRequest(selects: selects, order: order, limit: limit))
     }
 }
 

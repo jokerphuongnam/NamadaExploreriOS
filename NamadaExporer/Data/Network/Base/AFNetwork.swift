@@ -57,7 +57,7 @@ extension AFNetwork {
 #endif
                     let res = try decoder.decode(T.Response.self, from: data)
                     completion(.success(res))
-                } catch  {
+                } catch {
                     completion(.failure(NetworkError.unknownError(ResponseError(error.localizedDescription, statusCode: statusCode))))
                 }
             default:

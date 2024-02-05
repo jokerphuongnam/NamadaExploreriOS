@@ -16,7 +16,9 @@ func diRegister() -> Container {
         SupabaseInterceptor()
     }.inObjectScope(.container)
     container.register(JSONDecoder.self) { _ in
-        JSONDecoder()
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
     }.inObjectScope(.container)
     container.register(Session.self) { resolver in
         let configuration = URLSessionConfiguration.default

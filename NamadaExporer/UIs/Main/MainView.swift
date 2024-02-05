@@ -108,7 +108,7 @@ extension MainView {
                         }
                     } label: {
                         Text(state.title)
-                            .foregroundColor((currentState == state) ? .black: .gray)
+                            .foregroundColor(currentState == state ? .black: .gray)
                             .bold()
                             .frame(minWidth: .zero, maxWidth: .infinity, alignment: .leading)
                             .padding(.all, 16)

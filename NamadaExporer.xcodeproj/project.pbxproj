@@ -16,6 +16,11 @@
 		A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */; };
 		A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15202B6FA08300C3D80B /* ErrorModel.swift */; };
 		A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15222B6FA16700C3D80B /* NetworkError.swift */; };
+		A89388782B7125D800DA01E6 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89388772B7125D800DA01E6 /* Blocks.swift */; };
+		A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89388792B7126D000DA01E6 /* SupabaseSelect.swift */; };
+		A893887D2B712FF700DA01E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893887C2B712FF700DA01E6 /* Date.swift */; };
+		A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893887F2B713FDE00DA01E6 /* HomeState.swift */; };
+		A89388822B71416E00DA01E6 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89388812B71416E00DA01E6 /* EnvironmentValues.swift */; };
 		A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */; };
 		A8C97B862B6F89640076B4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B852B6F89640076B4EA /* Assets.xcassets */; };
 		A8C97B892B6F89640076B4EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */; };
@@ -53,6 +58,11 @@
 		A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetwork.swift; sourceTree = "<group>"; };
 		A80D15202B6FA08300C3D80B /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		A80D15222B6FA16700C3D80B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A89388772B7125D800DA01E6 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		A89388792B7126D000DA01E6 /* SupabaseSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseSelect.swift; sourceTree = "<group>"; };
+		A893887C2B712FF700DA01E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A893887F2B713FDE00DA01E6 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		A89388812B71416E00DA01E6 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
 		A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamadaExporer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaExporerApp.swift; sourceTree = "<group>"; };
 		A8C97B852B6F89640076B4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +154,15 @@
 			path = Domains;
 			sourceTree = "<group>";
 		};
+		A893887E2B713E4B00DA01E6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9AC92B6FF3A200B36FFC /* SupabaseInterceptor.swift */,
+				A8FC9AC12B6FEA6F00B36FFC /* SupabaseRequest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A8C97B752B6F89620076B4EA = {
 			isa = PBXGroup;
 			children = (
@@ -165,12 +184,12 @@
 		A8C97B802B6F89620076B4EA /* NamadaExporer */ = {
 			isa = PBXGroup;
 			children = (
-				A8FC9ACB2B6FF4FE00B36FFC /* Utils */,
 				A80D15142B6F9B8C00C3D80B /* Application */,
 				A8C97B912B6F89B10076B4EA /* DI */,
 				A8C97B902B6F89A90076B4EA /* Repositories */,
 				A8C97B8F2B6F89A40076B4EA /* Data */,
 				A8C97B922B6F89B80076B4EA /* UIs */,
+				A8FC9ACB2B6FF4FE00B36FFC /* Utils */,
 				A8C97B852B6F89640076B4EA /* Assets.xcassets */,
 				A8C97B872B6F89640076B4EA /* Preview Content */,
 			);
@@ -238,6 +257,7 @@
 			children = (
 				A8FC9ABA2B6FE69B00B36FFC /* Children */,
 				A8C97B9C2B6F8E170076B4EA /* HomeView.swift */,
+				A893887F2B713FDE00DA01E6 /* HomeState.swift */,
 				A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */,
 			);
 			path = Home;
@@ -304,11 +324,9 @@
 		A8FC9AC32B6FECB400B36FFC /* Supabase */ = {
 			isa = PBXGroup;
 			children = (
+				A893887E2B713E4B00DA01E6 /* Base */,
 				A8FC9AC42B6FECEF00B36FFC /* Requests */,
 				A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */,
-				A8FC9AC12B6FEA6F00B36FFC /* SupabaseRequest.swift */,
-				A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */,
-				A8FC9AC92B6FF3A200B36FFC /* SupabaseInterceptor.swift */,
 			);
 			path = Supabase;
 			sourceTree = "<group>";
@@ -316,7 +334,10 @@
 		A8FC9AC42B6FECEF00B36FFC /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */,
+				A89388792B7126D000DA01E6 /* SupabaseSelect.swift */,
 				A8FC9AC52B6FECFA00B36FFC /* Validators.swift */,
+				A89388772B7125D800DA01E6 /* Blocks.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -325,6 +346,8 @@
 			isa = PBXGroup;
 			children = (
 				A8FC9AD02B6FFCF400B36FFC /* StringProtocol+Extension.swift */,
+				A893887C2B712FF700DA01E6 /* Date.swift */,
+				A89388812B71416E00DA01E6 /* EnvironmentValues.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -462,6 +485,8 @@
 				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
 				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
+				A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */,
+				A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */,
 				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
 				A8FC9AC02B6FE74100B36FFC /* HomeBlocksView.swift in Sources */,
 				A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */,
@@ -469,7 +494,10 @@
 				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,
 				A8FC9AC62B6FECFA00B36FFC /* Validators.swift in Sources */,
 				A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */,
+				A89388822B71416E00DA01E6 /* EnvironmentValues.swift in Sources */,
+				A893887D2B712FF700DA01E6 /* Date.swift in Sources */,
 				A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */,
+				A89388782B7125D800DA01E6 /* Blocks.swift in Sources */,
 				A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

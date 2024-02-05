@@ -11,6 +11,8 @@ final class HomeViewModel: ObservableObject {
     private let supabaseNetwork: SupabaseNetwork
     
     @Published var validatorsState: DataState<Validators> = .loading
+    @Published var blocksState: DataState<Blocks> = .loading
+    var isDetailLoaded = false
     
     init(supabaseNetwork: SupabaseNetwork) {
         self.supabaseNetwork = supabaseNetwork
@@ -21,7 +23,7 @@ final class HomeViewModel: ObservableObject {
         Task(priority: .utility) { [weak self] in
             guard let self = self else { return }
             do {
-                let validators = try await self.supabaseNetwork.fecthValidators(select: nil, order: .desc, limit: 10)
+                let validators = try await self.supabaseNetwork.fecthValidators(selects: .all, order: .desc, limit: 10)
                 Task { @MainActor in
                     self.validatorsState = .success(data: validators)
                 }
@@ -31,5 +33,26 @@ final class HomeViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func get10Blocks() {
+        blocksState = .loading
+        Task(priority: .utility) { [weak self] in
+            guard let self = self else { return }
+            do {
+                let blocks = try await self.supabaseNetwork.fetchBlocks(selects: [SupabaseSelect]([.height, .hash, .time, .numTxs, .proposerAddress]), order: .desc, limit: 10)
+                Task { @MainActor in
+                    self.blocksState = .success(data: blocks)
+                }
+            } catch {
+                Task { @MainActor in
+                    self.blocksState = .error(error: error)
+                }
+            }
+        }
+    }
+    
+    func getHomeDetails() {
+        
     }
 }
