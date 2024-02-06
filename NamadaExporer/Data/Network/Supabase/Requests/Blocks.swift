@@ -14,11 +14,12 @@ final class BlocksRequest: SupabaseRequest {
     var path: String = "blocks"
     var parameters: Parameters
     
-    init(selects: [SupabaseSelect], order: SupabaseOrder.SortOrder, limit: Int) {
+    init(selects: [SupabaseSelect], orders: [SupabaseOrder], limit: Int, offset: Int) {
         parameters = [
             "select": selects.createQueryString(),
-            "order": SupabaseOrder(field: .height, order: order).text,
-            "limit": limit
+            "order": orders.createQueryString(),
+            "limit": limit,
+            "offset": offset
         ]
     }
 }

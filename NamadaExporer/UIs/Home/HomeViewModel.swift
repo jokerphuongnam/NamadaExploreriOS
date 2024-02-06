@@ -23,7 +23,7 @@ final class HomeViewModel: ObservableObject {
         Task(priority: .utility) { [weak self] in
             guard let self = self else { return }
             do {
-                let validators = try await self.supabaseNetwork.fecthValidators(selects: .all, order: .desc, limit: 10)
+                let validators = try await self.supabaseNetwork.fecthValidators(selects: .all, orders: [SupabaseOrder(field: .votingPower, order: .desc)], limit: 10, offset: 0)
                 Task { @MainActor in
                     self.validatorsState = .success(data: validators)
                 }
@@ -40,7 +40,7 @@ final class HomeViewModel: ObservableObject {
         Task(priority: .utility) { [weak self] in
             guard let self = self else { return }
             do {
-                let blocks = try await self.supabaseNetwork.fetchBlocks(selects: [SupabaseSelect]([.height, .hash, .time, .numTxs, .proposerAddress]), order: .desc, limit: 10)
+                let blocks = try await self.supabaseNetwork.fetchBlocks(selects: [SupabaseSelect]([.height, .hash, .time, .numTxs, .proposerAddress]), orders: [SupabaseOrder(field: .height, order: .desc)], limit: 10, offset: 0)
                 Task { @MainActor in
                     self.blocksState = .success(data: blocks)
                 }

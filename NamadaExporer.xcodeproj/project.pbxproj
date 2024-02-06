@@ -21,6 +21,9 @@
 		A893887D2B712FF700DA01E6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893887C2B712FF700DA01E6 /* Date.swift */; };
 		A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893887F2B713FDE00DA01E6 /* HomeState.swift */; };
 		A89388822B71416E00DA01E6 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89388812B71416E00DA01E6 /* EnvironmentValues.swift */; };
+		A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893BFFF2B7293A5002B3524 /* ValidatorsViewModel.swift */; };
+		A893C0042B7296F1002B3524 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893C0032B7296F1002B3524 /* ErrorView.swift */; };
+		A893C0062B72A15D002B3524 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893C0052B72A15D002B3524 /* Constants.swift */; };
 		A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */; };
 		A8C97B862B6F89640076B4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B852B6F89640076B4EA /* Assets.xcassets */; };
 		A8C97B892B6F89640076B4EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		A893887C2B712FF700DA01E6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A893887F2B713FDE00DA01E6 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
 		A89388812B71416E00DA01E6 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
+		A893BFFF2B7293A5002B3524 /* ValidatorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorsViewModel.swift; sourceTree = "<group>"; };
+		A893C0032B7296F1002B3524 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A893C0052B72A15D002B3524 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamadaExporer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaExporerApp.swift; sourceTree = "<group>"; };
 		A8C97B852B6F89640076B4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +169,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		A893C0022B7296D6002B3524 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				A893C0032B7296F1002B3524 /* ErrorView.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
 		A8C97B752B6F89620076B4EA = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +198,7 @@
 		A8C97B802B6F89620076B4EA /* NamadaExporer */ = {
 			isa = PBXGroup;
 			children = (
+				A893C0022B7296D6002B3524 /* SharedViews */,
 				A80D15142B6F9B8C00C3D80B /* Application */,
 				A8C97B912B6F89B10076B4EA /* DI */,
 				A8C97B902B6F89A90076B4EA /* Repositories */,
@@ -267,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C97B9E2B6F8E2F0076B4EA /* ValidatorsView.swift */,
+				A893BFFF2B7293A5002B3524 /* ValidatorsViewModel.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -348,6 +364,7 @@
 				A8FC9AD02B6FFCF400B36FFC /* StringProtocol+Extension.swift */,
 				A893887C2B712FF700DA01E6 /* Date.swift */,
 				A89388812B71416E00DA01E6 /* EnvironmentValues.swift */,
+				A893C0052B72A15D002B3524 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -477,6 +494,7 @@
 				A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */,
 				A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */,
 				A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */,
+				A893C0062B72A15D002B3524 /* Constants.swift in Sources */,
 				A8C97BA12B6F8E3B0076B4EA /* BlocksView.swift in Sources */,
 				A8FC9ACA2B6FF3A200B36FFC /* SupabaseInterceptor.swift in Sources */,
 				A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */,
@@ -485,11 +503,13 @@
 				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
 				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
+				A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */,
 				A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */,
 				A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */,
 				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
 				A8FC9AC02B6FE74100B36FFC /* HomeBlocksView.swift in Sources */,
 				A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */,
+				A893C0042B7296F1002B3524 /* ErrorView.swift in Sources */,
 				A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */,
 				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,
 				A8FC9AC62B6FECFA00B36FFC /* Validators.swift in Sources */,

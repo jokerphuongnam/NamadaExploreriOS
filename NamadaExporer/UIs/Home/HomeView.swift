@@ -15,11 +15,15 @@ struct HomeView: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            HomeValidatorsView(validatorsState: viewModel.validatorsState)
+            HomeValidatorsView(validatorsState: viewModel.validatorsState) {
+                viewModel.get10Validators()
+            }
             .opacity(currentState == .validators ? 1 : 0)
             .onAppear(perform: viewModel.get10Validators)
             
-            HomeBlocksView(blocksState: viewModel.blocksState)
+            HomeBlocksView(blocksState: viewModel.blocksState) {
+                viewModel.get10Blocks()
+            }
             .opacity(currentState == .blocks ? 1 : 0)
             .onAppear(perform: viewModel.get10Blocks)
             

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct HomeValidatorsView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
-    private var validatorsState: DataState<Validators>
+    private let validatorsState: DataState<Validators>
+    private let retryAction: (() -> Void)?
     
-    init(validatorsState: DataState<Validators>) {
+    init(validatorsState: DataState<Validators>, retryAction: (() -> Void)? = nil) {
         self.validatorsState = validatorsState
+        self.retryAction = retryAction
     }
     
     var body: some View {
@@ -38,14 +40,21 @@ struct HomeValidatorsView: View {
         case .success(let data):
             validatorsView(data)
         case .error(let error):
-            Text(String("\(error)"))
+            ErrorView(error: error) {
+                retryAction?()
+            }
         }
     }
     
     @ViewBuilder func validatorsView(_ validators: Validators) -> some View {
-        LazyVStack(spacing: 8) {
-            ForEach(Array(validators.enumerated()), id: \.element.address) { index, validator in
-                validatorView(index: index + 1, validator)
+        if validators.isEmpty {
+            Text("Validator is empty")
+                .bold()
+        } else {
+            LazyVStack(spacing: 8) {
+                ForEach(Array(validators.enumerated()), id: \.element.address) { index, validator in
+                    validatorView(index: index + 1, validator)
+                }
             }
         }
     }

@@ -9,10 +9,11 @@ import SwiftUI
 
 struct HomeBlocksView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
-    private var blocksState: DataState<Blocks>
+    private let blocksState: DataState<Blocks>
+    private let retryAction: (() -> Void)? = nil
     private let now: Date = Date()
     
-    init(blocksState: DataState<Blocks>) {
+    init(blocksState: DataState<Blocks>, retryAction: (() -> Void)? = nil) {
         self.blocksState = blocksState
     }
     
@@ -39,14 +40,21 @@ struct HomeBlocksView: View {
         case .success(let data):
             blocksView(data)
         case .error(let error):
-            Text(String("\(error)"))
+            ErrorView(error: error) {
+                retryAction?()
+            }
         }
     }
     
-    @ViewBuilder func blocksView(_ validators: Blocks) -> some View {
-        LazyVStack(spacing: 8) {
-            ForEach(Array(validators.enumerated()), id: \.element.height) { index, block in
-                blockView(index: index + 1, block)
+    @ViewBuilder func blocksView(_ blocks: Blocks) -> some View {
+        if blocks.isEmpty {
+            Text("Block is empty")
+                .bold()
+        } else {
+            LazyVStack(spacing: 8) {
+                ForEach(Array(blocks.enumerated()), id: \.element.height) { index, block in
+                    blockView(index: index + 1, block)
+                }
             }
         }
     }
