@@ -8,9 +8,7 @@
 import Foundation
 import Alamofire
 
-protocol SupabaseRequest: Request {
-    
-}
+protocol SupabaseRequest: Request { }
 
 extension SupabaseRequest {
     var baseURL: URL {

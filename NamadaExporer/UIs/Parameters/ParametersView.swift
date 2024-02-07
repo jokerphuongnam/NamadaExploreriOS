@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct ParametersView: View {
-    var body: some View {
-        Text("ParametersView")
+    @StateObject private var viewModel = ParametersViewModel(namadaInfoNetwork: AppDelegate.resolve())
+    
+    @ViewBuilder var body: some View {
+        contentView
+    }
+    
+    @ViewBuilder var contentView: some View {
+        ScrollView {
+            VStack(spacing: 2) {
+                HStack {
+                    Text("Genesis Validators")
+                        .bold()
+                        .font(.system(size: 32))
+                    
+                    Spacer()
+                }.padding(.horizontal, 12)
+                
+                HStack {
+                    Text("Chain ID shielded-expedition.88f17d1d14")
+                    
+                    Spacer()
+                }.padding(.horizontal, 12)
+                
+                GenesisAccountsView(genesisAccountsState: viewModel.genesisAccountsState)
+                    .padding(16)
+                    .onAppear(perform: viewModel.getGenesisAccounts)
+            }
+            .padding(.top, 32)
+        }
+        .background(Color.white)
     }
 }
 

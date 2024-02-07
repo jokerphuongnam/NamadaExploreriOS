@@ -14,7 +14,7 @@ struct ValidatorsView: View {
     var body: some View {
         ScrollView {
             validatorsStateView
-            .padding(.top, 32)
+                .padding(.top, 32)
         }
         .background(Color.white)
         .onAppear {

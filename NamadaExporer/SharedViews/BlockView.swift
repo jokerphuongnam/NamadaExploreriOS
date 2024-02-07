@@ -25,7 +25,7 @@ import SwiftUI
                 Text(String(block.numTxs))
                 
                 Spacer()
-                if let date = block.date {
+                if let date = block.time.date {
                     Text((date - now).timeAgoString())
                 } else {
                     Text(block.time)

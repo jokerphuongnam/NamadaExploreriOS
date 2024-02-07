@@ -25,7 +25,6 @@ final class BlocksRequest: SupabaseRequest {
 }
 
 // MARK: - Block
-private let dateFormatter = DateFormatter()
 struct Block: Codable, Hashable {
     let height: Int
     let hash: String
@@ -37,17 +36,6 @@ struct Block: Codable, Hashable {
         case height, hash, time
         case numTxs = "num_txs"
         case proposerAddress = "proposer_address"
-    }
-    
-    var date: Date? {
-        let timeFormats = ["yyyy-MM-dd'T'HH:mm:ss.SSSSSS", "yyyy-MM-dd'T'HH:mm:ss"]
-        for timeFormat in timeFormats {
-            dateFormatter.dateFormat = timeFormat
-            if let time = dateFormatter.date(from: time) {
-                return time
-            }
-        }
-        return nil
     }
 }
 

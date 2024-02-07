@@ -14,7 +14,7 @@ struct BlocksView: View {
     var body: some View {
         ScrollView {
             blocksStateView
-            .padding(.top, 32)
+                .padding(.top, 32)
         }
         .background(Color.white)
         .onAppear {

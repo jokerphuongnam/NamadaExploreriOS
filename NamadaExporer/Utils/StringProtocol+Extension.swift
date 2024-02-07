@@ -21,3 +21,17 @@ extension StringProtocol {
     subscript(range: PartialRangeThrough<Int>) -> SubSequence { self[...index(startIndex, offsetBy: range.upperBound)] }
     subscript(range: PartialRangeUpTo<Int>) -> SubSequence { self[..<index(startIndex, offsetBy: range.upperBound)] }
 }
+
+private let dateFormatter = DateFormatter()
+extension String {
+    var date: Date? {
+        let timeFormats = ["yyyy-MM-dd'T'HH:mm:ss.SSSSSS", "yyyy-MM-dd'T'HH:mm:ss"]
+        for timeFormat in timeFormats {
+            dateFormatter.dateFormat = timeFormat
+            if let time = dateFormatter.date(from: self) {
+                return time
+            }
+        }
+        return nil
+    }
+}

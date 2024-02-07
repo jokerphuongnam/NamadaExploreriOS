@@ -20,7 +20,7 @@ func diRegister() -> Container {
         decoder.dateDecodingStrategy = .iso8601
         return decoder
     }.inObjectScope(.container)
-    container.register(Session.self) { resolver in
+    container.register(URLSessionConfiguration.self) { _ in
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForResource = TimeInterval(60)
         configuration.timeoutIntervalForRequest = TimeInterval(60)
@@ -28,10 +28,30 @@ func diRegister() -> Container {
         configuration.allowsCellularAccess = false
         configuration.allowsConstrainedNetworkAccess = false
         configuration.allowsExpensiveNetworkAccess = false
-        
-        return Session(configuration: configuration, interceptor: resolver.resolve(SupabaseInterceptor.self)!)
+        return configuration
+    }
+    container.register(Session.self, name: "SupabaseSesion") { resolver in
+        Session(
+            configuration: resolver.resolve(URLSessionConfiguration.self)!,
+            interceptor: resolver.resolve(SupabaseInterceptor.self)!
+        )
     }.inObjectScope(.container)
-    container.autoregister(SupabaseNetwork.self, initializer: SupabaseNetworkImpl.init).inObjectScope(.container)
-    container.autoregister(Namadexer.self, initializer: NamadexerImpl.init).inObjectScope(.container)
+    container.register(Session.self, name: "NamadaInfoSesion") { resolver in
+        Session(
+            configuration: resolver.resolve(URLSessionConfiguration.self)!
+        )
+    }.inObjectScope(.container)
+    container.register(SupabaseNetwork.self) { resolve in
+        SupabaseNetworkImpl(
+            session: resolve.resolve(Session.self, name: "SupabaseSesion")!,
+            decoder: resolve.resolve(JSONDecoder.self)!
+        )
+    }.inObjectScope(.container)
+    container.register(NamadaInfoNetwork.self) { resolve in
+        NamadaInfoNetworkImpl(
+            session: resolve.resolve(Session.self, name: "NamadaInfoSesion")!,
+            decoder: resolve.resolve(JSONDecoder.self)!
+        )
+    }.inObjectScope(.container)
     return container
 }

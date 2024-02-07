@@ -11,11 +11,16 @@
 		3DDD19232B736B7D00AE66A0 /* ValidatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19222B736B7D00AE66A0 /* ValidatorView.swift */; };
 		3DDD19252B736C4200AE66A0 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19242B736C4200AE66A0 /* BlockView.swift */; };
 		3DDD19272B736D1D00AE66A0 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */; };
+		3DDD192A2B73728500AE66A0 /* NamadaInfoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19292B73728500AE66A0 /* NamadaInfoNetwork.swift */; };
+		3DDD192D2B7372A900AE66A0 /* NamadaInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD192C2B7372A900AE66A0 /* NamadaInfoRequest.swift */; };
+		3DDD19302B7374AE00AE66A0 /* GenesisAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD192F2B7374AE00AE66A0 /* GenesisAccounts.swift */; };
+		3DDD19352B7378EF00AE66A0 /* GenesisAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19342B7378EF00AE66A0 /* GenesisAccountsView.swift */; };
+		3DDD19372B73796500AE66A0 /* ParametersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19362B73796500AE66A0 /* ParametersViewModel.swift */; };
+		3DDD19392B737A5A00AE66A0 /* GenesisAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19382B737A5A00AE66A0 /* GenesisAccountView.swift */; };
 		A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */; };
 		A80D15112B6F9A2500C3D80B /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15102B6F9A2500C3D80B /* DI.swift */; };
 		A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */; };
 		A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */; };
-		A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15172B6F9D8E00C3D80B /* Namadexer.swift */; };
 		A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D151A2B6F9EE000C3D80B /* Request.swift */; };
 		A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */; };
 		A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15202B6FA08300C3D80B /* ErrorModel.swift */; };
@@ -57,6 +62,12 @@
 		3DDD19222B736B7D00AE66A0 /* ValidatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorView.swift; sourceTree = "<group>"; };
 		3DDD19242B736C4200AE66A0 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
+		3DDD19292B73728500AE66A0 /* NamadaInfoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaInfoNetwork.swift; sourceTree = "<group>"; };
+		3DDD192C2B7372A900AE66A0 /* NamadaInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaInfoRequest.swift; sourceTree = "<group>"; };
+		3DDD192F2B7374AE00AE66A0 /* GenesisAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenesisAccounts.swift; sourceTree = "<group>"; };
+		3DDD19342B7378EF00AE66A0 /* GenesisAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenesisAccountsView.swift; sourceTree = "<group>"; };
+		3DDD19362B73796500AE66A0 /* ParametersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewModel.swift; sourceTree = "<group>"; };
+		3DDD19382B737A5A00AE66A0 /* GenesisAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenesisAccountView.swift; sourceTree = "<group>"; };
 		8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.release.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.release.xcconfig"; sourceTree = "<group>"; };
 		91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamadaExporer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.debug.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +75,6 @@
 		A80D15102B6F9A2500C3D80B /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A80D15152B6F9B9B00C3D80B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A80D15172B6F9D8E00C3D80B /* Namadexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namadexer.swift; sourceTree = "<group>"; };
 		A80D151A2B6F9EE000C3D80B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A80D151C2B6F9F4F00C3D80B /* AFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetwork.swift; sourceTree = "<group>"; };
 		A80D15202B6FA08300C3D80B /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
@@ -122,6 +132,57 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3DDD19282B73727300AE66A0 /* Namada */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD192B2B73729A00AE66A0 /* Base */,
+				3DDD192E2B73749300AE66A0 /* Requests */,
+				3DDD19292B73728500AE66A0 /* NamadaInfoNetwork.swift */,
+			);
+			path = Namada;
+			sourceTree = "<group>";
+		};
+		3DDD192B2B73729A00AE66A0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD192C2B7372A900AE66A0 /* NamadaInfoRequest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3DDD192E2B73749300AE66A0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD192F2B7374AE00AE66A0 /* GenesisAccounts.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3DDD19312B7374CB00AE66A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */,
+				A89388792B7126D000DA01E6 /* SupabaseSelect.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3DDD19322B7378BF00AE66A0 /* Children */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
+		3DDD19332B7378E200AE66A0 /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD19342B7378EF00AE66A0 /* GenesisAccountsView.swift */,
+				3DDD19382B737A5A00AE66A0 /* GenesisAccountView.swift */,
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
 		588799321D543FCBFC2D132C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +212,9 @@
 		A80D151E2B6FA06F00C3D80B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3DDD19282B73727300AE66A0 /* Namada */,
 				A8FC9AC32B6FECB400B36FFC /* Supabase */,
 				A80D15192B6F9E4F00C3D80B /* Base */,
-				A80D15172B6F9D8E00C3D80B /* Namadexer.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -293,6 +354,7 @@
 		A8C97B982B6F8A220076B4EA /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
+				3DDD19322B7378BF00AE66A0 /* Children */,
 				A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */,
 				3DDD191E2B7369F000AE66A0 /* BlocksViewModel.swift */,
 			);
@@ -318,7 +380,9 @@
 		A8C97B9B2B6F8A4B0076B4EA /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				3DDD19332B7378E200AE66A0 /* Children */,
 				A8C97BA62B6F8E650076B4EA /* ParametersView.swift */,
+				3DDD19362B73796500AE66A0 /* ParametersViewModel.swift */,
 			);
 			path = Parameters;
 			sourceTree = "<group>";
@@ -344,6 +408,7 @@
 		A8FC9AC32B6FECB400B36FFC /* Supabase */ = {
 			isa = PBXGroup;
 			children = (
+				3DDD19312B7374CB00AE66A0 /* Utils */,
 				A893887E2B713E4B00DA01E6 /* Base */,
 				A8FC9AC42B6FECEF00B36FFC /* Requests */,
 				A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */,
@@ -354,8 +419,6 @@
 		A8FC9AC42B6FECEF00B36FFC /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				A8FC9AC72B6FF04300B36FFC /* SupabaseOrder.swift */,
-				A89388792B7126D000DA01E6 /* SupabaseSelect.swift */,
 				A8FC9AC52B6FECFA00B36FFC /* Validators.swift */,
 				A89388772B7125D800DA01E6 /* Blocks.swift */,
 			);
@@ -487,7 +550,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDD19372B73796500AE66A0 /* ParametersViewModel.swift in Sources */,
 				A8C97BA52B6F8E5B0076B4EA /* GovernanceView.swift in Sources */,
+				3DDD192A2B73728500AE66A0 /* NamadaInfoNetwork.swift in Sources */,
 				A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */,
 				A8FC9AC82B6FF04300B36FFC /* SupabaseOrder.swift in Sources */,
 				3DDD19272B736D1D00AE66A0 /* LoadMoreView.swift in Sources */,
@@ -505,10 +570,14 @@
 				A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */,
 				A8C97B9F2B6F8E2F0076B4EA /* ValidatorsView.swift in Sources */,
 				A8FC9ABC2B6FE71200B36FFC /* HomeDetailView.swift in Sources */,
+				3DDD192D2B7372A900AE66A0 /* NamadaInfoRequest.swift in Sources */,
+				3DDD19392B737A5A00AE66A0 /* GenesisAccountView.swift in Sources */,
+				3DDD19302B7374AE00AE66A0 /* GenesisAccounts.swift in Sources */,
 				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
 				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
 				A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */,
+				3DDD19352B7378EF00AE66A0 /* GenesisAccountsView.swift in Sources */,
 				3DDD19252B736C4200AE66A0 /* BlockView.swift in Sources */,
 				3DDD19232B736B7D00AE66A0 /* ValidatorView.swift in Sources */,
 				A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */,
@@ -524,7 +593,6 @@
 				3DDD191F2B7369F000AE66A0 /* BlocksViewModel.swift in Sources */,
 				A89388822B71416E00DA01E6 /* EnvironmentValues.swift in Sources */,
 				A893887D2B712FF700DA01E6 /* Date.swift in Sources */,
-				A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */,
 				A89388782B7125D800DA01E6 /* Blocks.swift in Sources */,
 				A80D15232B6FA16700C3D80B /* NetworkError.swift in Sources */,
 			);

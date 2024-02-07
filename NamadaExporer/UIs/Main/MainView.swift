@@ -90,9 +90,9 @@ extension MainView {
         case .transactions:
             TransactionsView()
         case .governance:
-            TransactionsView()
-        case .parameters:
             GovernanceView()
+        case .parameters:
+            ParametersView()
         }
     }
     
