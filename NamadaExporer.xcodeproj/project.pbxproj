@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DDD191F2B7369F000AE66A0 /* BlocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD191E2B7369F000AE66A0 /* BlocksViewModel.swift */; };
+		3DDD19232B736B7D00AE66A0 /* ValidatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19222B736B7D00AE66A0 /* ValidatorView.swift */; };
+		3DDD19252B736C4200AE66A0 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19242B736C4200AE66A0 /* BlockView.swift */; };
+		3DDD19272B736D1D00AE66A0 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */; };
 		A80D150F2B6F99F000C3D80B /* SupabaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D150E2B6F99F000C3D80B /* SupabaseNetwork.swift */; };
 		A80D15112B6F9A2500C3D80B /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15102B6F9A2500C3D80B /* DI.swift */; };
 		A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */; };
@@ -49,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DDD191E2B7369F000AE66A0 /* BlocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksViewModel.swift; sourceTree = "<group>"; };
+		3DDD19222B736B7D00AE66A0 /* ValidatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorView.swift; sourceTree = "<group>"; };
+		3DDD19242B736C4200AE66A0 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 		8B1E51F6026A37BC2B4F6C7D /* Pods-NamadaExporer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.release.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.release.xcconfig"; sourceTree = "<group>"; };
 		91E8EB6DAC1A9DD456CD4878 /* Pods_NamadaExporer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamadaExporer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920DAF7E3C6ECD967A02D4D8 /* Pods-NamadaExporer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamadaExporer.debug.xcconfig"; path = "Target Support Files/Pods-NamadaExporer/Pods-NamadaExporer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				A893C0032B7296F1002B3524 /* ErrorView.swift */,
+				3DDD19222B736B7D00AE66A0 /* ValidatorView.swift */,
+				3DDD19242B736C4200AE66A0 /* BlockView.swift */,
+				3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */,
 			);
 			path = SharedViews;
 			sourceTree = "<group>";
@@ -198,12 +209,11 @@
 		A8C97B802B6F89620076B4EA /* NamadaExporer */ = {
 			isa = PBXGroup;
 			children = (
-				A893C0022B7296D6002B3524 /* SharedViews */,
 				A80D15142B6F9B8C00C3D80B /* Application */,
 				A8C97B912B6F89B10076B4EA /* DI */,
-				A8C97B902B6F89A90076B4EA /* Repositories */,
 				A8C97B8F2B6F89A40076B4EA /* Data */,
 				A8C97B922B6F89B80076B4EA /* UIs */,
+				A893C0022B7296D6002B3524 /* SharedViews */,
 				A8FC9ACB2B6FF4FE00B36FFC /* Utils */,
 				A8C97B852B6F89640076B4EA /* Assets.xcassets */,
 				A8C97B872B6F89640076B4EA /* Preview Content */,
@@ -226,13 +236,6 @@
 				A80D151E2B6FA06F00C3D80B /* Network */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		A8C97B902B6F89A90076B4EA /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		A8C97B912B6F89B10076B4EA /* DI */ = {
@@ -291,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */,
+				3DDD191E2B7369F000AE66A0 /* BlocksViewModel.swift */,
 			);
 			path = Blocks;
 			sourceTree = "<group>";
@@ -486,6 +490,7 @@
 				A8C97BA52B6F8E5B0076B4EA /* GovernanceView.swift in Sources */,
 				A80D151B2B6F9EE000C3D80B /* Request.swift in Sources */,
 				A8FC9AC82B6FF04300B36FFC /* SupabaseOrder.swift in Sources */,
+				3DDD19272B736D1D00AE66A0 /* LoadMoreView.swift in Sources */,
 				A8FC9ACF2B6FF6D800B36FFC /* DataState.swift in Sources */,
 				A8FC9ABE2B6FE72F00B36FFC /* HomeValidatorsView.swift in Sources */,
 				A8C97B9D2B6F8E170076B4EA /* HomeView.swift in Sources */,
@@ -504,6 +509,8 @@
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
 				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
 				A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */,
+				3DDD19252B736C4200AE66A0 /* BlockView.swift in Sources */,
+				3DDD19232B736B7D00AE66A0 /* ValidatorView.swift in Sources */,
 				A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */,
 				A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */,
 				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
@@ -514,6 +521,7 @@
 				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,
 				A8FC9AC62B6FECFA00B36FFC /* Validators.swift in Sources */,
 				A80D151D2B6F9F4F00C3D80B /* AFNetwork.swift in Sources */,
+				3DDD191F2B7369F000AE66A0 /* BlocksViewModel.swift in Sources */,
 				A89388822B71416E00DA01E6 /* EnvironmentValues.swift in Sources */,
 				A893887D2B712FF700DA01E6 /* Date.swift in Sources */,
 				A80D15182B6F9D8E00C3D80B /* Namadexer.swift in Sources */,
@@ -648,7 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NamadaExporer/Preview Content\"";
-				DEVELOPMENT_TEAM = YZK42MUV9Y;
+				DEVELOPMENT_TEAM = 6AY3LGP972;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -678,7 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NamadaExporer/Preview Content\"";
-				DEVELOPMENT_TEAM = YZK42MUV9Y;
+				DEVELOPMENT_TEAM = 6AY3LGP972;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

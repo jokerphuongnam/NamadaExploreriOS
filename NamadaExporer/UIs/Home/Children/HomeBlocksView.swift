@@ -11,7 +11,6 @@ struct HomeBlocksView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     private let blocksState: DataState<Blocks>
     private let retryAction: (() -> Void)? = nil
-    private let now: Date = Date()
     
     init(blocksState: DataState<Blocks>, retryAction: (() -> Void)? = nil) {
         self.blocksState = blocksState
@@ -52,44 +51,12 @@ struct HomeBlocksView: View {
                 .bold()
         } else {
             LazyVStack(spacing: 8) {
+                let now: Date = Date()
                 ForEach(Array(blocks.enumerated()), id: \.element.height) { index, block in
-                    blockView(index: index + 1, block)
+                    BlockView(index: index + 1, now: now, block)
                 }
             }
         }
-    }
-    
-    @ViewBuilder func blockView(index: Int, _ block: Block) -> some View {
-        HStack(spacing: 4) {
-            Text(String(block.height))
-                .bold()
-                .font(.system(size: 24))
-            
-            VStack(spacing: 2) {
-                Text(block.hash)
-                    .bold()
-                    .lineLimit(1)
-                
-                Text(block.proposerAddress)
-                    .lineLimit(1)
-                
-                HStack(spacing: 8) {
-                    Text(String(block.numTxs))
-                    
-                    Spacer()
-                    
-                    Text((block.date - now).timeAgoString())
-                }
-            }
-        }
-        .padding(.all, 8)
-        .background(Color.yellow)
-        .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(.black, lineWidth: 1)
-        )
-        .padding(.horizontal, 12)
     }
 }
 

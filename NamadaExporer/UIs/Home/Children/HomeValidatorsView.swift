@@ -53,47 +53,10 @@ struct HomeValidatorsView: View {
         } else {
             LazyVStack(spacing: 8) {
                 ForEach(Array(validators.enumerated()), id: \.element.address) { index, validator in
-                    validatorView(index: index + 1, validator)
+                    ValidatorView(index: index + 1, validator)
                 }
             }
         }
-    }
-    
-    @ViewBuilder func validatorView(index: Int, _ validator: Validator) -> some View {
-        HStack(spacing: 4) {
-            Text(String(index))
-                .bold()
-                .font(.system(size: 24))
-            
-            VStack(spacing: 2) {
-                Text(validator.address)
-                    .bold()
-                    .lineLimit(1)
-                Text(validator.pubKey)
-                    .lineLimit(1)
-                
-                Color.clear.frame(height: 6)
-                
-                HStack(spacing: 8) {
-                    Text(String(validator.height))
-                    
-                    VStack(spacing: 4) {
-                        Text(String(validator.votingPower))
-                        Text(String(validator.proposerPriority))
-                    }
-                    
-                    Spacer()
-                }
-            }
-        }
-        .padding(.all, 8)
-        .background(Color.yellow)
-        .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(.black, lineWidth: 1)
-        )
-        .padding(.horizontal, 12)
     }
 }
 

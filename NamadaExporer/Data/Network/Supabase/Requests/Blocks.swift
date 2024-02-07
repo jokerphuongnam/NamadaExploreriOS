@@ -39,9 +39,15 @@ struct Block: Codable, Hashable {
         case proposerAddress = "proposer_address"
     }
     
-    var date: Date {
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS"
-        return dateFormatter.date(from: time)!
+    var date: Date? {
+        let timeFormats = ["yyyy-MM-dd'T'HH:mm:ss.SSSSSS", "yyyy-MM-dd'T'HH:mm:ss"]
+        for timeFormat in timeFormats {
+            dateFormatter.dateFormat = timeFormat
+            if let time = dateFormatter.date(from: time) {
+                return time
+            }
+        }
+        return nil
     }
 }
 

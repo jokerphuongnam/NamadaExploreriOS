@@ -15,7 +15,6 @@ struct ValidatorsView: View {
         ScrollView {
             validatorsStateView
             .padding(.top, 32)
-            .padding(.bottom, 52 + 8 + safeAreaInsets.bottom)
         }
         .background(Color.white)
         .onAppear {
@@ -31,7 +30,7 @@ struct ValidatorsView: View {
             validatorsView(data)
         case .error(let error):
             ErrorView(error: error) {
-                viewModel.loadValidators()
+                viewModel.loadMoreValidators()
             }
         }
     }
@@ -42,65 +41,17 @@ struct ValidatorsView: View {
                 .bold()
         } else {
             LazyVStack(spacing: 8) {
-                ForEach(Array(validators.enumerated()), id: \.element.address) { index, validator in
-                    validatorView(index: index + 1, validator)
+                ForEach(Array(validators.enumerated()), id: \.offset) { index, validator in
+                    ValidatorView(index: index + 1, validator)
                         .onAppear {
-                            if validators.count - 10 > index {
-                                viewModel.loadValidators()
+                            if validators.count - 10 < index {
+                                viewModel.loadMoreValidators()
                             }
                         }
                 }
                 
-                loadMoreView
-            }
-        }
-    }
-    
-    @ViewBuilder func validatorView(index: Int, _ validator: Validator) -> some View {
-        HStack(spacing: 4) {
-            Text(String(index))
-                .bold()
-                .font(.system(size: 24))
-            
-            VStack(spacing: 2) {
-                Text(validator.address)
-                    .bold()
-                    .lineLimit(1)
-                Text(validator.pubKey)
-                    .lineLimit(1)
-                
-                Color.clear.frame(height: 6)
-                
-                HStack(spacing: 8) {
-                    Text(String(validator.height))
-                    
-                    VStack(spacing: 4) {
-                        Text(String(validator.votingPower))
-                        Text(String(validator.proposerPriority))
-                    }
-                    
-                    Spacer()
-                }
-            }
-        }
-        .padding(.all, 8)
-        .background(Color.yellow)
-        .cornerRadius(8)
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(.black, lineWidth: 1)
-        )
-        .padding(.horizontal, 12)
-    }
-    
-    @ViewBuilder var loadMoreView: some View {
-        if let loadMoreState = viewModel.loadMoreState {
-            switch loadMoreState {
-            case .loading:
-                ProgressView()
-            case .error(let error):
-                ErrorView(error: error) {
-                    viewModel.loadMoreValidators()
+                if let loadMoreState = viewModel.loadMoreState {
+                    LoadMoreView(loadMoreState: loadMoreState, retryAction: viewModel.loadMoreValidators)
                 }
             }
         }
