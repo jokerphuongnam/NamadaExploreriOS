@@ -14,24 +14,28 @@ import SwiftUI
             .font(.system(size: 24))
         
         VStack(spacing: 2) {
+            
+            HStack(spacing: 4) {
+                Spacer()
+                Text("Piority: \(String(validator.proposerPriority))")
+                    .font(.system(size: 10))
+            }
+            
             Text(validator.address)
                 .bold()
                 .lineLimit(1)
+            
             Text(validator.pubKey)
                 .lineLimit(1)
-            
-            Color.clear.frame(height: 6)
             
             HStack(spacing: 8) {
                 Text(String(validator.height))
                 
-                VStack(spacing: 4) {
-                    Text(String(validator.votingPower))
-                    Text(String(validator.proposerPriority))
-                }
-                
                 Spacer()
+                
+                Text(String(validator.votingPower))
             }
+            .padding(.top, 6)
         }
     }
     .padding(.all, 8)

@@ -32,8 +32,8 @@ struct ParametersView: View {
                 }.padding(.horizontal, 12)
                 
                 GenesisAccountsView(genesisAccountsState: viewModel.genesisAccountsState)
-                    .padding(16)
                     .onAppear(perform: viewModel.getGenesisAccounts)
+                    .padding(.top, 16)
             }
             .padding(.top, 32)
         }

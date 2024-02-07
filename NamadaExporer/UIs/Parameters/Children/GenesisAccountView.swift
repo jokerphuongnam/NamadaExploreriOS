@@ -20,6 +20,8 @@ import SwiftUI
                     .lineLimit(1)
                 
                 Spacer()
+                
+                Text(genesisAccount.netAddress)
             }
             
             VStack(spacing: 4) {
@@ -34,14 +36,8 @@ import SwiftUI
                     Spacer()
                     
                     if let commissionRate = Double(genesisAccount.commissionRate), let maxCommissionRateChange = Double(genesisAccount.maxCommissionRateChange) {
-                        Text(String("\(commissionRate * 100)% / \(maxCommissionRateChange * 100)%"))
+                        Text(String("\(String(format: "%.2f", commissionRate * 100))% / \(String(format: "%.2f", maxCommissionRateChange * 100))%"))
                     }
-                }
-                
-                HStack {
-                    Spacer()
-                    
-                    Text(genesisAccount.netAddress)
                 }
             }
         }
