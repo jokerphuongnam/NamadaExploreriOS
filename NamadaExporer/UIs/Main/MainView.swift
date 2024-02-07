@@ -58,6 +58,8 @@ struct MainView: View {
                         .renderingMode(.template)
                         .colorMultiply(.black)
                         .frame(width: 28)
+                        .padding(.vertical, 8)
+                        .padding(.trailing, 8)
                 }
             }
             
