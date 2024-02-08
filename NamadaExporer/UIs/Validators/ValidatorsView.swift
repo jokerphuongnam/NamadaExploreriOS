@@ -23,8 +23,12 @@ struct ValidatorsView: View {
                         .font(.system(size: 32))
                         .bold()
                         .foregroundColor(.yellow)
-                        .maxWidth()
+                        .background(.yellow)
+                        .padding(.horizontal, 16)
+                        .frame(height: 52)
+                        .cornerRadius(8)
                 }
+                .maxWidth()
                 .padding(.top, 32)
                 .padding(.leading, 16)
                 
