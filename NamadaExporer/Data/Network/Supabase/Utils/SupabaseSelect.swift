@@ -13,6 +13,7 @@ enum SupabaseSelect: String, CaseIterable {
     case time = "time"
     case numTxs = "num_txs"
     case proposerAddress = "proposer_address"
+    case votingPower = "voting_power"
 }
 
 extension Array where Element == SupabaseSelect {

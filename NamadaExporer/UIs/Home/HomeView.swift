@@ -16,16 +16,16 @@ struct HomeView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             HomeValidatorsView(validatorsState: viewModel.validatorsState) {
-                viewModel.get10Validators()
+                viewModel.load10Validators()
             }
             .opacity(currentState == .validators ? 1 : 0)
-            .onAppear(perform: viewModel.get10Validators)
+            .onAppear(perform: viewModel.load10Validators)
             
             HomeBlocksView(blocksState: viewModel.blocksState) {
-                viewModel.get10Blocks()
+                viewModel.load10Blocks()
             }
             .opacity(currentState == .blocks ? 1 : 0)
-            .onAppear(perform: viewModel.get10Blocks)
+            .onAppear(perform: viewModel.load10Blocks)
             
             VStack(spacing: 0) {
                 Color.gray.frame(height: 1)
@@ -40,13 +40,15 @@ struct HomeView: View {
             .ignoresSafeArea()
         }.sheet(isPresented: $isPresentDetail) {
             NavigationView {
-                HomeDetailView()
-                    .navigationTitle("Details")
+                HomeDetailView(
+                    dataState: viewModel.homeDetailsState
+                ) {
+                    viewModel.loadHomeDetails()
+                }
+                .navigationTitle("Namada Details")
             }
             .onAppear {
-                if !viewModel.isDetailLoaded {
-                    viewModel.getHomeDetails()
-                }
+                viewModel.loadHomeDetails()
             }
         }
     }
@@ -78,7 +80,8 @@ struct HomeView: View {
                         Text("Home Details")
                             .foregroundColor(.gray)
                             .bold()
-                            .lineLimit(0)
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
                             .frame(minWidth: .zero, maxWidth: .infinity, alignment: .leading)
                             .padding(.all, 16)
                             .frame(width: geometry.size.width / 3)

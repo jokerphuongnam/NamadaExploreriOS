@@ -11,14 +11,42 @@ struct ValidatorsView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     @StateObject private var viewModel = ValidatorsViewModel(supabaseNetwork: AppDelegate.resolve())
     
+    @State private var isPresentDetail = false
+    
     var body: some View {
         ScrollView {
-            validatorsStateView
+            VStack(spacing: 16) {
+                Button {
+                    isPresentDetail.toggle()
+                } label: {
+                    Text("Home Details")
+                        .font(.system(size: 32))
+                        .bold()
+                        .foregroundColor(.yellow)
+                        .maxWidth()
+                }
                 .padding(.top, 32)
+                .padding(.leading, 16)
+                
+                validatorsStateView
+                    .padding(.top, 32)
+            }
         }
         .background(Color.white)
         .onAppear {
             viewModel.loadValidators()
+        }.sheet(isPresented: $isPresentDetail) {
+            NavigationView {
+                HomeDetailView(
+                    dataState: viewModel.homeDetailsState
+                ) {
+                    viewModel.loadHomeDetails()
+                }
+                .navigationTitle("Namada Details")
+            }
+            .onAppear {
+                viewModel.loadHomeDetails()
+            }
         }
     }
     
@@ -35,7 +63,7 @@ struct ValidatorsView: View {
         }
     }
     
-    @ViewBuilder func validatorsView(_ validators: Validators) -> some View {
+    @ViewBuilder func validatorsView(_ validators: Validators.AllField) -> some View {
         if validators.isEmpty {
             Text("Validator is empty")
                 .bold()

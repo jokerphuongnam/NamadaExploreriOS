@@ -10,10 +10,11 @@ import SwiftUI
 struct HomeBlocksView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     private let blocksState: DataState<Blocks>
-    private let retryAction: (() -> Void)? = nil
+    private let retryAction: (() -> Void)?
     
     init(blocksState: DataState<Blocks>, retryAction: (() -> Void)? = nil) {
         self.blocksState = blocksState
+        self.retryAction = retryAction
     }
     
     var body: some View {

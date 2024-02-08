@@ -9,10 +9,10 @@ import SwiftUI
 
 struct HomeValidatorsView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
-    private let validatorsState: DataState<Validators>
+    private let validatorsState: DataState<Validators.AllField>
     private let retryAction: (() -> Void)?
     
-    init(validatorsState: DataState<Validators>, retryAction: (() -> Void)? = nil) {
+    init(validatorsState: DataState<Validators.AllField>, retryAction: (() -> Void)? = nil) {
         self.validatorsState = validatorsState
         self.retryAction = retryAction
     }
@@ -46,7 +46,7 @@ struct HomeValidatorsView: View {
         }
     }
     
-    @ViewBuilder func validatorsView(_ validators: Validators) -> some View {
+    @ViewBuilder func validatorsView(_ validators: Validators.AllField) -> some View {
         if validators.isEmpty {
             Text("Validator is empty")
                 .bold()

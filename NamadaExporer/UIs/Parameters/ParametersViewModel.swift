@@ -16,7 +16,7 @@ final class ParametersViewModel: ObservableObject {
         self.namadaInfoNetwork = namadaInfoNetwork
     }
     
-    func getGenesisAccounts() {
+    func loadGenesisAccounts() {
         self.genesisAccountsState = .loading
         Task(priority: .utility) { [weak self] in
             guard let self = self else { return }

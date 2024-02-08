@@ -31,8 +31,4 @@ extension Array where Element == SupabaseOrder {
         let encodedProperties = propertyNames.map { $0.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? $0 }
         return encodedProperties.joined(separator: "%2C").removingPercentEncoding!
     }
-    
-    static var all: Self {
-        []
-    }
 }

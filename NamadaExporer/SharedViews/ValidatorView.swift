@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@ViewBuilder func ValidatorView(index: Int, _ validator: Validator) -> some View {
+@ViewBuilder func ValidatorView(index: Int, _ validator: Validator.AllField) -> some View {
     HStack(spacing: 4) {
         Text(String(index))
             .bold()
@@ -23,9 +23,11 @@ import SwiftUI
             
             Text(validator.address)
                 .bold()
+                .multilineTextAlignment(.center)
                 .lineLimit(1)
             
             Text(validator.pubKey)
+                .multilineTextAlignment(.center)
                 .lineLimit(1)
             
             HStack(spacing: 8) {

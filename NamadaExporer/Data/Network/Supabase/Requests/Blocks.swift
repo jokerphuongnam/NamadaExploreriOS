@@ -8,19 +8,25 @@
 import Foundation
 import Alamofire
 
-final class BlocksRequest: SupabaseRequest {
+struct BlocksRequest: SupabaseRequest {
     typealias Response = Blocks
     
     var path: String = "blocks"
     var parameters: Parameters
     
-    init(selects: [SupabaseSelect], orders: [SupabaseOrder], limit: Int, offset: Int) {
+    init(selects: [SupabaseSelect], orders: [SupabaseOrder], limit: Int?, offset: Int?) {
         parameters = [
-            "select": selects.createQueryString(),
-            "order": orders.createQueryString(),
-            "limit": limit,
-            "offset": offset
+            "select": selects.createQueryString()
         ]
+        if !orders.isEmpty {
+            parameters["order"] =  orders.createQueryString()
+        }
+        if let offset = offset {
+            parameters["offset"] =  offset
+        }
+        if let limit = limit {
+            parameters["limit"] =  limit
+        }
     }
 }
 

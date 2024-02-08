@@ -16,9 +16,11 @@ import SwiftUI
         VStack(spacing: 2) {
             Text(block.hash)
                 .bold()
+                .multilineTextAlignment(.center)
                 .lineLimit(1)
             
             Text(block.proposerAddress)
+                .multilineTextAlignment(.center)
                 .lineLimit(1)
             
             HStack(spacing: 8) {

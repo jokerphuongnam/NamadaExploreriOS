@@ -33,6 +33,11 @@
 		A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893BFFF2B7293A5002B3524 /* ValidatorsViewModel.swift */; };
 		A893C0042B7296F1002B3524 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893C0032B7296F1002B3524 /* ErrorView.swift */; };
 		A893C0062B72A15D002B3524 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893C0052B72A15D002B3524 /* Constants.swift */; };
+		A8C546572B74F322004D08E5 /* HomeDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C546562B74F322004D08E5 /* HomeDetailsData.swift */; };
+		A8C546592B74F6EF004D08E5 /* SwiftUI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C546582B74F6EF004D08E5 /* SwiftUI+Extension.swift */; };
+		A8C5465B2B751BC3004D08E5 /* Foudation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5465A2B751BC3004D08E5 /* Foudation+Extension.swift */; };
+		A8C5465E2B751E20004D08E5 /* TransactionsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5465D2B751E20004D08E5 /* TransactionsState.swift */; };
+		A8C546622B75218B004D08E5 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C546612B75218B004D08E5 /* TransactionsViewModel.swift */; };
 		A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */; };
 		A8C97B862B6F89640076B4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B852B6F89640076B4EA /* Assets.xcassets */; };
 		A8C97B892B6F89640076B4EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C97B882B6F89640076B4EA /* Preview Assets.xcassets */; };
@@ -87,6 +92,11 @@
 		A893BFFF2B7293A5002B3524 /* ValidatorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorsViewModel.swift; sourceTree = "<group>"; };
 		A893C0032B7296F1002B3524 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		A893C0052B72A15D002B3524 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A8C546562B74F322004D08E5 /* HomeDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsData.swift; sourceTree = "<group>"; };
+		A8C546582B74F6EF004D08E5 /* SwiftUI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Extension.swift"; sourceTree = "<group>"; };
+		A8C5465A2B751BC3004D08E5 /* Foudation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foudation+Extension.swift"; sourceTree = "<group>"; };
+		A8C5465D2B751E20004D08E5 /* TransactionsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsState.swift; sourceTree = "<group>"; };
+		A8C546612B75218B004D08E5 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		A8C97B7E2B6F89620076B4EA /* NamadaExporer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamadaExporer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C97B812B6F89620076B4EA /* NamadaExporerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamadaExporerApp.swift; sourceTree = "<group>"; };
 		A8C97B852B6F89640076B4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,13 +177,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		3DDD19322B7378BF00AE66A0 /* Children */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Children;
-			sourceTree = "<group>";
-		};
 		3DDD19332B7378E200AE66A0 /* Children */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +250,38 @@
 				3DDD19262B736D1D00AE66A0 /* LoadMoreView.swift */,
 			);
 			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		A8C546552B74F313004D08E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A893887F2B713FDE00DA01E6 /* HomeState.swift */,
+				A8C546562B74F322004D08E5 /* HomeDetailsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8C5465C2B751E0A004D08E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A8C5465D2B751E20004D08E5 /* TransactionsState.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8C5465F2B751E5A004D08E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A8C97BAB2B6F92F40076B4EA /* MainState.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8C546602B75217B004D08E5 /* Children */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Children;
 			sourceTree = "<group>";
 		};
 		A8C97B752B6F89620076B4EA = {
@@ -325,8 +360,8 @@
 		A8C97B932B6F89CC0076B4EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A8C5465F2B751E5A004D08E5 /* Data */,
 				A8C97B942B6F89DF0076B4EA /* MainView.swift */,
-				A8C97BAB2B6F92F40076B4EA /* MainState.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -334,9 +369,9 @@
 		A8C97B962B6F8A100076B4EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A8C546552B74F313004D08E5 /* Data */,
 				A8FC9ABA2B6FE69B00B36FFC /* Children */,
 				A8C97B9C2B6F8E170076B4EA /* HomeView.swift */,
-				A893887F2B713FDE00DA01E6 /* HomeState.swift */,
 				A80D15122B6F9B4000C3D80B /* HomeViewModel.swift */,
 			);
 			path = Home;
@@ -354,7 +389,6 @@
 		A8C97B982B6F8A220076B4EA /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD19322B7378BF00AE66A0 /* Children */,
 				A8C97BA02B6F8E3B0076B4EA /* BlocksView.swift */,
 				3DDD191E2B7369F000AE66A0 /* BlocksViewModel.swift */,
 			);
@@ -364,7 +398,10 @@
 		A8C97B992B6F8A280076B4EA /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				A8C546602B75217B004D08E5 /* Children */,
+				A8C5465C2B751E0A004D08E5 /* Data */,
 				A8C97BA22B6F8E470076B4EA /* TransactionsView.swift */,
+				A8C546612B75218B004D08E5 /* TransactionsViewModel.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -432,6 +469,8 @@
 				A893887C2B712FF700DA01E6 /* Date.swift */,
 				A89388812B71416E00DA01E6 /* EnvironmentValues.swift */,
 				A893C0052B72A15D002B3524 /* Constants.swift */,
+				A8C546582B74F6EF004D08E5 /* SwiftUI+Extension.swift */,
+				A8C5465A2B751BC3004D08E5 /* Foudation+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -561,6 +600,7 @@
 				A8C97B9D2B6F8E170076B4EA /* HomeView.swift in Sources */,
 				A8FC9AC22B6FEA6F00B36FFC /* SupabaseRequest.swift in Sources */,
 				A8C97B952B6F89DF0076B4EA /* MainView.swift in Sources */,
+				A8C5465E2B751E20004D08E5 /* TransactionsState.swift in Sources */,
 				A8C97B822B6F89620076B4EA /* NamadaExporerApp.swift in Sources */,
 				A80D15162B6F9B9B00C3D80B /* AppDelegate.swift in Sources */,
 				A80D15212B6FA08300C3D80B /* ErrorModel.swift in Sources */,
@@ -574,17 +614,21 @@
 				3DDD19392B737A5A00AE66A0 /* GenesisAccountView.swift in Sources */,
 				3DDD19302B7374AE00AE66A0 /* GenesisAccounts.swift in Sources */,
 				A8C97BAC2B6F92F40076B4EA /* MainState.swift in Sources */,
+				A8C546592B74F6EF004D08E5 /* SwiftUI+Extension.swift in Sources */,
 				A80D15132B6F9B4000C3D80B /* HomeViewModel.swift in Sources */,
 				A8FC9AD12B6FFCF400B36FFC /* StringProtocol+Extension.swift in Sources */,
 				A893C0002B7293A6002B3524 /* ValidatorsViewModel.swift in Sources */,
 				3DDD19352B7378EF00AE66A0 /* GenesisAccountsView.swift in Sources */,
 				3DDD19252B736C4200AE66A0 /* BlockView.swift in Sources */,
+				A8C546622B75218B004D08E5 /* TransactionsViewModel.swift in Sources */,
 				3DDD19232B736B7D00AE66A0 /* ValidatorView.swift in Sources */,
 				A893887A2B7126D000DA01E6 /* SupabaseSelect.swift in Sources */,
+				A8C546572B74F322004D08E5 /* HomeDetailsData.swift in Sources */,
 				A89388802B713FDE00DA01E6 /* HomeState.swift in Sources */,
 				A80D15112B6F9A2500C3D80B /* DI.swift in Sources */,
 				A8FC9AC02B6FE74100B36FFC /* HomeBlocksView.swift in Sources */,
 				A8C97BA72B6F8E650076B4EA /* ParametersView.swift in Sources */,
+				A8C5465B2B751BC3004D08E5 /* Foudation+Extension.swift in Sources */,
 				A893C0042B7296F1002B3524 /* ErrorView.swift in Sources */,
 				A8C97BAA2B6F8F130076B4EA /* DocsView.swift in Sources */,
 				A8C97BA32B6F8E470076B4EA /* TransactionsView.swift in Sources */,

@@ -26,13 +26,13 @@ struct ParametersView: View {
                 }.padding(.horizontal, 12)
                 
                 HStack {
-                    Text("Chain ID shielded-expedition.88f17d1d14")
+                    Text("Chain ID: \(Constants.chainID)")
                     
                     Spacer()
                 }.padding(.horizontal, 12)
                 
                 GenesisAccountsView(genesisAccountsState: viewModel.genesisAccountsState)
-                    .onAppear(perform: viewModel.getGenesisAccounts)
+                    .onAppear(perform: viewModel.loadGenesisAccounts)
                     .padding(.top, 16)
             }
             .padding(.top, 32)
